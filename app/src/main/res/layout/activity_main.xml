@@ -1,39 +1,45 @@
+<!-- Auto layout, variables, and unit scale are not yet supported -->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/welcomescre"
+    android:layout_width="412dp"
+    android:layout_height="917dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF">
 
-    <!-- Background Image -->
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bsm_thibault_poriel" />
+    <View
+        android:id="@+id/image_1"
+        android:layout_width="1503dp"
+        android:layout_height="1170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-791dp"
+        android:layout_marginTop="-253dp"
+        android:background="@drawable/image_1"
+        />
 
-    <!-- Buttons in the foreground -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:gravity="center">
+    <View
+        android:id="@+id/image_2"
+        android:layout_width="247dp"
+        android:layout_height="84dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="770dp"
+        android:background="@drawable/image_2"
+        />
 
-        <Button
-            android:id="@+id/button_public"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Public Usage"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"/>
-
-        <Button
-            android:id="@+id/button_pro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Pro Usage" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/sell_rad"
+        android:layout_width="340dp"
+        android:layout_height="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="401dp"
+        android:text="@string/sell_rad"
+        android:textAppearance="@style/sell_rad"
+        android:gravity="top"
+        />
 
 </FrameLayout>
