@@ -2,7 +2,8 @@
     <item
         android:id="@+id/navigation_apprendre"
         android:icon="@drawable/book"
-        android:title="Apprendre" />
+        android:title="Apprendre"
+        android:onClick="helloWorld"/>
     <item
         android:id="@+id/navigation_statistiques"
         android:icon="@drawable/stats"

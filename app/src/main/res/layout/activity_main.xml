@@ -11,9 +11,7 @@
         android:id="@+id/image_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="-791dp"
+        android:layout_marginStart="-791dp"
         android:layout_marginTop="-253dp"
         android:background="@drawable/image_1"
         />
