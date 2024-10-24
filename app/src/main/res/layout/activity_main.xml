@@ -9,8 +9,8 @@
 
     <View
         android:id="@+id/image_1"
-        android:layout_width="1503dp"
-        android:layout_height="1170dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="-791dp"

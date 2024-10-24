@@ -2,35 +2,25 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button publicButton = findViewById(R.id.button_public);
-        Button proButton = findViewById(R.id.button_pro);
+        int delayMillis = 3000;
 
-        publicButton.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
+            public void run() {
                 Intent intent = new Intent(MainActivity.this, PublicActivity.class);
                 startActivity(intent);
-            }
-        });
-
-        proButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProActivity.class);
-                startActivity(intent);
-            }
-        });
+                finish();
+                }
+        }, delayMillis);
     }
 }
