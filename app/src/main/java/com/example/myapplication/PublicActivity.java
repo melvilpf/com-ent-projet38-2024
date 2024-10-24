@@ -7,6 +7,8 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Button;
 
 public class PublicActivity extends AppCompatActivity {
 
@@ -32,6 +34,10 @@ public class PublicActivity extends AppCompatActivity {
         if (takePictureIntent.resolveActivity(packageManager) != null) {
             activityResultLauncher.launch(takePictureIntent);
         }
+    }
+
+    public void helloWorld(MenuItem item) {
+        System.out.println("helloworld");
     }
 }
 
